@@ -1,0 +1,20 @@
+name: Leave2die
+version: '${project.version}'
+main: kunlab.leave2die.Leave2die
+api-version: 1.16
+commands:
+  setpair:
+    usage: /setpair <player1> <player2>
+    permission: Leave2die.operator
+  r:
+    usage: /r <player>
+    permission: Leave2die.all
+  remaining:
+    usage: /remaining
+    permission: Leave2die.operator
+
+permissions:
+  Leave2die.operator:
+    default: op
+  Leave2die.all:
+    default: true
